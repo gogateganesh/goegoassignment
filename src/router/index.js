@@ -19,7 +19,8 @@ const router = createRouter({
     {
       path: '/distributordetails/:index',
       name: 'distributordetails',
-      component: DistributorDetails
+      component: DistributorDetails,
+      props: true
     }
   ]
 })

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-center">Distributors List</h2>
+    <h2 class="text-center">Products List</h2>
     <div class="container">
       <table class="table">
         <thead>
@@ -49,6 +49,14 @@ export default {
         },
       ],
     };
+  },
+  props: {
+    myList: {
+      default: null,
+    }
+  },
+  mounted() {
+    if (this.myList) this.ProductsList = this.myList;
   },
 };
 </script>
